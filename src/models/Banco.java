@@ -1,6 +1,14 @@
+package models;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
+
+	public Banco(String nome) {
+		this.nome = nome;
+		this.contas = new ArrayList<>();
+	}
 
 	private String nome;
 	private List<Conta> contas;
